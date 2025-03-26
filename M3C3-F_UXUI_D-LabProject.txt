@@ -1,0 +1,211 @@
+--
+
+- FASES DO PROJETO:
+
+    - Criar a ideia de um projeto simples e pequeno;                            ✅
+        
+        R: App de Lista de Tarefas com Prioridades.
+            
+            Telas sugeridas:
+                - Tela inicial com visualização de todas as tarefas.
+                - Tela de criação de nova tarefa.
+                - Tela de detalhes da tarefa com opções de editar ou excluir.
+                - Tela de filtragem de tarefas por prioridade ou data.
+
+    - Wireframe de média fidelidade;                                            ...
+
+        - Instruções iniciais para as telas (ChatGPT) e outras dicas relacionadas: ✅
+            - https://chatgpt.com/c/67cb65ee-e184-8004-b962-540ab50afdf1
+
+
+        - Rascunho (Wireframe): ✅
+
+            - Menu Global { Todas as Tarefas; Criar Tarefa; Filtrar Tarefas; Reciclagem; Sobre }
+
+            - Fluxo da App & Telas {
+                
+                - Visualizar/Editar Tarefa:
+                    
+                    - Voltar (Botão/Ícone)
+                    - Título
+                    - Concluída (Checkbox/Ícone)
+                        - Se a Checkbox estiver preenchida, então algumas "Props" da tarefa estarão inactivas:
+                            - Data Vencimento (Calendar), Ativar Lembrete (Toggle/Switch)...
+
+                    - Secção da Tarefa (com Rolagem/Scroll) com os campos alteráveis
+                        
+                        - Ações:
+                            - Voltar Uma Etapa (Botão/Ícone)
+                            - Avançar Uma Etapa (Botão/Ícone)
+
+                        - Props:
+                            Título/Nome, Descrição (campo opcional), Prioridade (Ícone), Data Vencimento (Calendar), 
+                            Concluída (Checkbox/Ícone), Ativar Lembrete (Toggle/Switch), Conteúdo.
+
+                    - Apagar Tarefa (Botão/Ícone / ClickEvent = Overlay / Modal de Confirmação)
+                    - Salvar Tarefa (Botão/Ícone)
+
+
+                - Criar Nova Tarefa:
+                    
+                    - Voltar (Botão/Ícone)
+
+                    - Secção de Criação de Tarefas
+                        - Props:
+                            Título/Nome, Descrição (campo opcional), Prioridade (Ícone), Data Vencimento (Calendar), Concluída (Checkbox/Ícone),
+                            Ativar Lembrete (Toggle/Switch), Conteúdo.
+
+                    - Cancelar (Botão / ClickEvent = Overlay / Modal de Confirmação)
+                    - Salvar Tarefa (Botão/Ícone / ClickEvent = Overlay / Modal de Confirmação)
+
+
+                - Todas as Tarefas:
+                    
+                    - Menu Global (Ícone)
+                    - Título
+                    - Pesquisar (Botão, ClickEvent = Navigate to)
+                    - Menu Local            > Editar (ClickEvent = Select Mode); View Mode (Tarefas).
+                        - Se o "Select Mode" estiver ativo, então no "Cabeçalho" teremos:
+                            - Excluir (Botão)
+
+                    - Secção com Todas as Tarefas (Cards)
+                        
+                        - Cada Tarefa
+                            
+                            - Props
+                            
+                                Título/Nome, Prioridade (Ícone), Data Vencimento (Calendar), Conteúdo.
+                            
+                                Menu Local      > Editar (ClickEvent = Navigate to); Apagar (ClickEvent = Overlay).
+                        
+                            - Eventos
+                                - Menu Local > Editar (ClickEvent = Navigate to) > Visualizar/Editar Tarefa
+                                - Menu Local > Apagar (ClickEvent = Overlay) > Modal de Confirmação
+
+                    - Criar Nova Tarefa (Botão Flutuante, no fundo da tela)
+                    - Filtrar Tarefas (Botão Flutuante, no fundo da tela)
+
+                    - Pesquisar:
+                        
+                        - Voltar (Botão/Ícone)
+                        - Título
+                        - Registos de pesquisas anteriores (se houverem registos. Ex.: Palavras, caracteres...)
+
+                        - Secção com os registos (tarefas) correspondentes com a pesquisa ou "sem resultados encontrados"
+
+
+                - Filtrar Tarefas:
+                    
+                    - Menu Global (Ícone)
+                    - Título
+
+                    - Opções de Filtro
+                        
+                        Prioridade (Select Box), 
+                        Data (
+                            Ordem Cresc, Ordem Decresc, 
+                            Intervalo (
+                                [Mês e Ano do 1º Registo] - [Mês e Ano do Último Registo]
+                            )
+                        ),
+                        Concluída(s) (Checkbox/Ícone)
+                        
+
+                    - Secção de Filtragem de Tarefas (Lista) ou "sem resultados encontrados"
+                        
+                        - Cada Tarefa
+                            
+                            - Props
+                            
+                                Título/Nome, Prioridade (Ícone), Data Vencimento (Calendar), Conteúdo.
+                            
+                                Menu Local      > Editar (ClickEvent = Navigate to); Apagar (ClickEvent = Overlay).
+                        
+                            - Eventos
+                                - Menu Local > Editar (ClickEvent = Navigate to) > Visualizar/Editar Tarefa
+                                - Menu Local > Apagar (ClickEvent = Overlay) > Modal de Confirmação
+
+                
+                - Reciclagem:
+                    
+                    - Menu Global (Ícone)
+                    - Título
+                    - Editar (Botão, ClickEvent = Select Mode)
+                        - Se o "Select Mode" estiver ativo, então no "Rodapé" teremos:
+                            - Excluir (Botão)
+                            - Recuperar (Botão)
+                    - Menu Local            > Esvaziar Reciclagem
+
+                    - Secção com Tarefas Apagadas (Lista/List View) e dentro do prazo
+                        - Props
+                            Título/Nome, Prioridade (Ícone), Tempo Restante ( > 30 dias), Concluída (Checkbox/Ícone), Conteúdo.
+
+
+                - Sobre:
+                    
+                    - Menu Global (Ícone)
+                    - Título
+
+                    - Secção Principal com alguns créditos...
+
+            }
+
+        - Execução  ...
+
+            - Grid: 4 Colunas.
+
+            - Tipografia:       Roboto.
+                
+                - Configurações de Texto:
+
+                    - H1:           26px
+                    - H2:           22px
+                    - H3:           18px
+                
+                    - Comum:        16px
+
+                    - Detalhes:     12px-14px
+
+                    - Botões:       16px-18px
+
+            - Ícones:
+                
+                - URL:  https://lucide.dev/icons/
+
+                - Tamanho Recomendado:
+                    - 24px para ícones principais
+                    - 16px–20px para secundários
+                
+                - Peso Recomendado:     Por testar...
+
+
+    - Design System (incluindo cores e texto definitivos);
+
+        - Rascunho (Design System): 
+
+            - Cores:            
+
+
+        - Execução  ...
+
+
+    - Componentes, Mockup/Design final e Protótipo navegável.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
