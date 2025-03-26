@@ -1,0 +1,96 @@
+--
+
+ÍCONES DO PROJETO (agrupados por proximidade lógica ou conviência própria)
+
+
+- 07: Menu Global (Ícone)               ✅
+- 08: Menu Local (Ícone)                ✅
+- 13: Voltar (Botão/Ícone)              ✅
+
+- 01: Adicionar Tarefa (Botão/Ícone)    ✅
+- 02: Apagar Tarefa (Botão/Ícone)       ✅
+- 12: Salvar Tarefa (Botão/Ícone)       ✅
+
+- 04: Calendar (Ícone)                  ✅
+- 05: Concluída (Checkbox/Ícone)        ✅
+- 06: Lembrete (Ícone)                  ✅
+- Prioridades (Ícones)                  ✅      09: Vermelho; 10: Amarelo; 11: Verde.
+
+- 14: Voltar Uma Etapa (Botão/Ícone)    ✅
+- 03: Avançar Uma Etapa (Botão/Ícone)   ✅
+
+
+-- ---------------------------------------------------
+
+
+TODOS OS ÍCONES DO PROJETO (em ordem Alfabética)
+
+
+- 01: Adicionar Tarefa (Botão/Ícone)
+
+- 02: Apagar Tarefa (Botão/Ícone)
+
+- 03: Avançar Uma Etapa (Botão/Ícone)
+
+- 04: Calendar (Ícone)
+
+- 05: Concluída (Checkbox/Ícone)
+
+- 06: Lembrete (Ícone)
+
+- 07: Menu Global (Ícone)
+
+- 08: Menu Local (Ícone)
+
+Prioridades (Ícones):
+- 09: Vermelho
+- 10: Amarelo
+- 11: Verde
+
+- 12: Salvar Tarefa (Botão/Ícone)
+
+- 13: Voltar (Botão/Ícone)
+
+- 14: Voltar Uma Etapa (Botão/Ícone)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
